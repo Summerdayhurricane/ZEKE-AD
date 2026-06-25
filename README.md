@@ -2,7 +2,7 @@
 
 Official evaluation code for **ZEKE-AD**.
 
-This repository contains the core inference scripts for zero/few-shot anomaly detection and segmentation.
+This repository contains the core inference scripts for few-shot anomaly detection and segmentation.
 
 ## Files
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## Data Preparation
 
-Organize your dataset following the MVTec-AD / LeAD structure with `meta.json`:
+Organize your dataset following the MVTec-AD structure with `meta.json`:
 
 ```
 data/
