@@ -10,6 +10,10 @@ This repository contains the core inference scripts for few-shot anomaly detecti
 |------|-------------|
 | `test_all_in_one.py` | Main evaluation script. Computes image-level AUROC and segmentation IoU across multiple random seeds. |
 | `dataset.py` | Dataset class for loading test images and memory/reference samples. |
+| `memory.py` | Builds the few-shot normal feature memory from test/good and train images. |
+| `metrics.py` | Metrics aggregator: mask IoU, image-level AUROC, and per-class/sample statistics. |
+| `evaluation.py` | Single-seed evaluation loop, including anomaly map generation and metric updates. |
+| `utils.py` | Shared utilities: seed fixing, Gaussian kernel creation, normalization, statistics. |
 | `run_test_all.sh` | Example bash script to run evaluations for k-shot = 1, 2, 3, 4, 5. |
 
 ## Requirements
